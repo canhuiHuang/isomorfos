@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Game, Types } from 'phaser';
-import { Nodes } from '../game/scenes/nodes';
 import gameConfig from '../game';
-import { Button, Table, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react';
+import { Button, Table, TableContainer, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react';
 import './App.scss';
-import phaserGame from '../game/index';
 
 const style = {
   padding: '80px',
@@ -34,7 +32,7 @@ function App() {
   const [state, setState] = useState<State>({
     graphs: [],
   });
-  const [game, setGame] = useState<Game | undefined>();
+  const [game, setGame] = useState<any | undefined>();
   const [showState, setShowState] = useState<boolean>(false);
 
   useEffect(() => {
