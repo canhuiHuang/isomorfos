@@ -153,7 +153,7 @@ function App() {
                   {graph.vertices.map((v, j) => (
                     <Tr key={j}>
                       <Td>{v.name}</Td>
-                      <Th>{v.aristas.length}</Th>
+                      <Td>{v.aristas.length}</Td>
                     </Tr>
                   ))}
                 </Tbody>

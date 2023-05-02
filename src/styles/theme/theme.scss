@@ -9,15 +9,3 @@
     border-color: white;
   }
 }
-
-[data-theme='light'] {
-  .panel-view,
-  .screen {
-    border-color: var(--chakra-colors-gray-200);
-  }
-
-  td,
-  th {
-    border-color: black;
-  }
-}

@@ -12,7 +12,7 @@ const theme = extendTheme({ config });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <ChakraProvider>
-    <ColorModeScript initialColorMode={'dark'} />
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <App />
   </ChakraProvider>,
 );
